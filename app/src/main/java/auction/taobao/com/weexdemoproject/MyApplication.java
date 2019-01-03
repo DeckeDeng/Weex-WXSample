@@ -20,7 +20,7 @@ public class MyApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        InitConfig config = new InitConfig.Builder().setImgAdapter(new ImageAdapter()).build();
-        WXSDKEngine.initialize(this,config);
+//        InitConfig config = new InitConfig.Builder().setImgAdapter(new ImageAdapter()).build();
+//        WXSDKEngine.initialize(this,config);
     }
 }

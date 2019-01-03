@@ -13,6 +13,10 @@ import com.taobao.weex.dom.WXImageQuality;
 
 /**
  * Created by lixinke on 16/6/1.
+ * Adapter 扩展 Weex 对一些基础功能实现了统一的接口，可实现这些接口来定制自己的业务。例如：图片下载等。
+ * handler类似于service，可被component、module或其他handler调用。
+ * handler和module在位置中的位置不一样。页面的module相当于一份拷贝，会随着页面的销毁而销毁；而handler的实例是公共的，只会有一个。
+ * handler一般由app实现，需要实现该handler对应的接口声明的方法。
  */
 public class ImageAdapter implements IWXImgLoaderAdapter {
 
